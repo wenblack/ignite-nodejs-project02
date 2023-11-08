@@ -5,9 +5,9 @@ const app = fastify()
 const port = 3333
 
 app.get('/', async () => {
-  const tables = await knex('sqlite_schema').select('*')
+  const transaction = await knex('transactions').select('*')
 
-  return tables
+  return transaction
 })
 
 app.listen({ port }).then(() => {
