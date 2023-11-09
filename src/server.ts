@@ -1,8 +1,9 @@
 import fastify from 'fastify'
 import { knex } from './database'
+import { env } from './env'
 
 const app = fastify()
-const port = 3333
+const port = env.PORT
 
 app.get('/', async () => {
   const transaction = await knex('transactions').select('*')
