@@ -48,9 +48,13 @@ Technologies that I used to develop this api
 - [TypeScript](https://www.typescriptlang.org/)
 - [Fastify](https://fastify.dev/)
 - [Knex](https://knexjs.org/)
-- [JWT-token](https://jwt.io/)
-- [Jest](https://jestjs.io/)
+- [@fastify/cookie](https://github.com/fastify/fastify-cookie)
+- [Vitest](https://vitest.dev/)
 - [Eslint](https://eslint.org/)
+- [Zod](https://zod.dev/)
+
+
+
 
 
 ## 💻 Getting started
