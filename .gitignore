@@ -2,4 +2,6 @@ node_modules
 package-lock.json
 yarn.lock
 database/app.db
+database/test.db
 .env
+.env.test
