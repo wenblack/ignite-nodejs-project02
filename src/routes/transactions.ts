@@ -10,7 +10,7 @@ export async function transactionRoutes(app: FastifyInstance) {
     {
       preHandler: [CheckSessionIdExists],
     },
-    async (req, res) => {
+    async (req) => {
       const sessionId = req.cookies.sessionId
 
       const transactions = await knex('transactions').where(
@@ -26,7 +26,7 @@ export async function transactionRoutes(app: FastifyInstance) {
     {
       preHandler: [CheckSessionIdExists],
     },
-    async (req, res) => {
+    async (req) => {
       const sessionId = req.cookies.sessionId
       const transactionParamsSchema = z.object({
         id: z.string().uuid(),
