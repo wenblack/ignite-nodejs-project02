@@ -1,5 +1,7 @@
 {
   "cSpell.words": [
-    "fastify"
+    "fastify",
+    "tsbuildinfo",
+    "tsup"
   ]
 }
